@@ -1,0 +1,612 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+body{
+    margin: 0 auto;
+}
+.wrapper{
+    font-family: 'Nunito';
+    display: grid;
+    margin:0 auto;
+    grid-template-columns:repeat(6,1f);
+    grid-template-rows: 100px 600px auto auto auto auto 100px;
+    grid-template-areas:
+    'header header'
+    'sectionHome sectionHome'
+    'sectionAbout sectionAbout'
+    'sectionHow sectionHow'
+    'sectionCategories sectionCategories'
+    'sectionTestimony sectionTestimony'
+    'footer footer';
+}
+.wrapper,header,section,footer{
+    width: 1152px;
+}
+/* Header */
+
+header{
+    display: grid;
+    grid-template-columns: 33%;
+    grid-template-rows: auto;
+    grid-template-areas: 'div nav';
+    grid-area: header;
+}
+header div{
+    margin-top: 11px;
+    grid-area: div;
+}
+header div img{
+    position: relative;
+    display: inline;
+    top: 6px;
+    right: 5px;
+}
+header div h3{
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 25px;
+    line-height: 30px;
+    letter-spacing: 0.25em;
+    display: inline;
+    color: #3E3F43;
+
+}
+header nav{
+    margin-top: 10px;
+    grid-area: nav;
+}
+header nav a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    color: rgba(34, 34, 34, 0.75);
+    margin-left: 25px;
+}
+header nav .active{
+    font-weight: 800;
+    font-size: 16px;
+    color: #DAA520;
+}
+header nav button{
+    margin-left: 45px;
+    border: 1px solid #3E3F43;
+    padding: 15px 45px;
+    background-color: transparent;
+    border-radius: 8px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #3E3F43;
+}
+header nav #bgHome{
+    position: relative;
+    z-index: -1;
+    left: 380px;
+    bottom: 245px;
+    background-color: #F9BDBD;
+    width: 370px;
+    height: 900px;
+    border-bottom-left-radius: 150px;
+}
+/* End Header */
+
+/* Home */
+#sectionHome{
+    grid-area: sectionHome;
+}
+#sectionHome .contentHome{
+    position: relative;
+    bottom: 50px;
+}
+#sectionHome .contentHome .contentLeft{
+    display: inline-block;
+    position: relative;
+    bottom: 0px;
+    width: 501px;
+}
+#sectionHome .contentHome .contentLeft p{
+    font-size: 35px;
+    color: #3E3F43;
+}
+#sectionHome .contentHome .contentLeft span{
+    font-weight: bold;
+    font-size: 71px;
+    color: #313235;
+}
+#sectionHome .contentHome .contentLeft button{
+    background: #DAA520;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid transparent;
+    padding: 12px 24px;
+    font-weight: bold;
+    margin-top: 45px;
+    transition-duration: .3s;
+}
+#sectionHome .contentHome .contentLeft button:hover{
+    box-shadow: 0 5px 0 0 #a07507 ;    
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: .3s;
+}
+#sectionHome .contentHome .contentRight{
+    position: relative;
+    top:44px;
+    left: 82px;
+    display: inline-block;
+}
+#sectionHome .contentHome .contentRight img{
+    width: 500px;
+}
+#sectionHome .contentHome .logoBg{
+    position: relative;
+    z-index: -1;
+    bottom: 250px;
+    left: 555px;
+}
+/* End Home */
+
+
+
+/* About */
+#sectionAbout{
+    margin-top: 15%;
+    grid-area: sectionAbout;
+}
+#sectionAbout .headerAbout h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #3E3F43;
+    display: inline-block;
+}
+#sectionAbout .headerAbout hr{
+    margin-left:15px;
+    width: 35%;
+    display: inline-block;
+}
+#sectionAbout .headerAbout h1{
+    margin-left: 25px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 99px;
+    text-transform: uppercase;
+    color: rgba(34, 34, 34, 0.1);
+    display: inline-block;
+}
+#sectionAbout .contentAbout .levelTop .contentLeft{
+    display: inline-block;
+}
+#sectionAbout .contentAbout .levelTop .contentLeft .imageAbout{
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 275px;
+    height: 389px;
+    background: #F7DEA6;
+    border-top-right-radius: 125px;
+    border-bottom-left-radius: 125px;
+}
+#sectionAbout .contentAbout .levelTop .contentLeft .imageAbout img{
+    position: relative;
+    top:78px;
+    left: 35px;
+}
+#sectionAbout .contentAbout .levelTop .contentRight{
+    display: inline-block;
+    position: relative;
+    left: 350px;
+    width: 450px;
+}
+#sectionAbout .contentAbout .levelTop .contentRight p{
+    font-size: 36px;
+    color: #3E3F43;
+}
+#sectionAbout .contentAbout .levelTop .contentRight span{
+    font-weight: 590;
+    font-size: 24px;
+    line-height: 33px;
+    color: #000000;
+}
+#sectionAbout .contentAbout .levelBottom .contentLeft{
+    color: #000000;
+    display: inline-block;
+    width: 658px;
+}
+#sectionAbout .contentAbout .levelBottom .contentLeft p{
+    font-size: 36px;
+    line-height: 49px;
+}
+#sectionAbout .contentAbout .levelBottom .contentLeft span{
+    font-size: 24px;
+    line-height: 32px;
+}
+#sectionAbout .contentAbout .levelBottom .contentRight{
+    display: inline-block;
+}
+#sectionAbout .contentAbout .levelBottom .contentRight img{
+    position: relative;
+    top: 167px;
+    margin-left: 118px;
+}
+/* End About */
+/* How */
+#sectionHow{
+    text-align: center;
+    margin-top: 13%;
+    grid-area: sectionHow;
+}
+#sectionHow .headerHow h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #3E3F43;
+    display: inline-block;
+}
+#sectionHow .headerHow hr{
+    margin-left:15px;
+    width: 15%;
+    display: inline-block;
+}
+#sectionHow .headerHow h1{
+    margin-left: 25px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 9px;
+    text-transform: uppercase;
+    color: rgba(34, 34, 34, 0.1);
+    display: inline-block;
+}
+#sectionHow .contentHow .card{
+    display: inline-block;
+    margin-right: 64px;
+    margin-left: 45px;
+}
+#sectionHow .contentHow .card .card-content p{
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+}
+#sectionHow button{
+    background: #DAA520;
+    border-radius: 4px;
+    border:1px solid transparent;
+    padding: 15px 45px;
+    font-weight: bold;
+    margin-top: 25px;
+    color: white;
+    transition-duration: .3s;
+}
+#sectionHow button:hover{
+    box-shadow: 0 5px 0 0 #a07507 ;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition-duration: .3s;
+}
+/* End How */
+
+/* Categories */
+#sectionCategories{
+    margin-top: 15%;
+    grid-area: sectionCategories;
+}
+#sectionCategories .headerCategories h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    color: #3E3F43;
+    display: inline-block;
+}
+#sectionCategories .headerCategories hr{
+    margin-left:15px;
+    width: 23%;
+    display: inline-block;
+}
+#sectionCategories .headerCategories h1{
+    margin-left: 25px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 97px;
+    text-transform: uppercase;
+    color: rgba(34, 34, 34, 0.1);
+    display: inline-block;
+}
+#sectionCategories .contentCategories .card{
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    display: inline-block;
+    padding: 15px;
+    width: 275px;
+    height: 400px;
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#sectionCategories .contentCategories .card h3{
+    position: relative;
+    width: 57px;
+    height: 33px;
+    left: 15px;
+    top: 0px;
+    font-weight: bold;
+    font-size: 24px;
+    color:#3E3F43;
+}
+#sectionCategories .contentCategories .card img{
+    position: relative;
+    width: 165.25px;
+    height: 245px;
+}
+#sectionCategories .contentCategories button{
+    position: relative;
+    top: 35px;
+    left:70px;
+    width: 120px;
+    height: 40px;
+    background-color: transparent;
+    border:1px solid #3E3F43;
+    border-radius: 4px;
+    color: #3E3F43;
+}
+#sectionCategories .contentCategories .desk{
+    background:#F9BDBD;
+}
+#sectionCategories .contentCategories .desk img{
+    transform: scaleY(1.6);
+    transform: scaleX(1.6);
+}
+#sectionCategories .contentCategories .chair{
+    background: #F7DEA6;
+}
+#sectionCategories .contentCategories .kitchenware{
+    background: #A8DCEC;
+}
+#sectionCategories .contentCategories .bookshelf{
+    background: #F9BDBD;
+}
+#sectionCategories .contentCategories .bookshelf h3{
+    width: 123px;
+}
+#sectionCategories .contentCategories .electronic{
+    background: #F7DEA6;
+}
+#sectionCategories .contentCategories .electronic img{
+    transform: scale(1.5,0.7);
+}
+/* End Categories */
+
+/* Testimony */
+#sectionTestimony{
+    margin-top: 15%;
+    grid-area: sectionTestimony;
+}
+#sectionTestimony .headerTestimony h2{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 49px;
+    color: #3E3F43;
+    display: inline-block;
+}
+#sectionTestimony .headerTestimony hr{
+    margin-left:15px;
+    width: 25%;
+    display: inline-block;
+}
+#sectionTestimony .headerTestimony h1{
+    margin-left: 25px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 73px;
+    line-height: 99px;
+    text-transform: uppercase;
+    color: rgba(34, 34, 34, 0.1);
+    display: inline-block;
+}
+#sectionTestimony .cards {
+    display: inline-block;
+}
+#sectionTestimony .card{
+    display: inline-block;
+    margin-right: 49x;
+}
+#sectionTestimony .card img{
+    border: 1px solid transparent;
+    border-top-left-radius: 90px;
+    border-bottom-right-radius: 90px;
+}
+#sectionTestimony .contentRight {
+    display: inline-block;
+    position: relative;
+}
+#sectionTestimony .contentRight .box{
+    position: relative;
+    bottom: 10px;
+    background: #FFFFFF;
+    padding: 16px 24px;
+    border: 1px solid #A8DCEC;
+    border-top-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+    width: 382px;
+    height: 250px;
+}
+#sectionTestimony .contentRight .box .box-content{
+    position: relative;
+    top: 50px;
+}
+#sectionTestimony .contentRight p{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 13px;
+    color: #3E3F43;
+}
+#sectionTestimony .contentRight .author img{
+    display: inline-block;
+    border-radius: 48%;
+}
+#sectionTestimony .contentRight .author div{
+    display: inline-block;
+    position: relative;
+    bottom: 5px;
+}
+#sectionTestimony .contentRight .author div p{
+    margin: 0;
+    font-weight: 598;
+    font-size: 12px;
+    color: #AFAFAF;
+}
+#sectionTestimony .contentRight button{
+    position: relative;
+    top: 25px;
+}
+#sectionTestimony .contentRight .previous{
+    border: 1px solid transparent;
+    background: transparent;
+    font-size: 12px;
+    color: #C4C4C4;
+}
+#sectionTestimony .contentRight .next{
+    border: 1px solid transparent;
+    background: transparent;
+    font-size: 12px;
+    color: #3E3F43;
+    position: relative;
+    left: 290px;
+}
+#sectionTestimony .contentRight .slider-button{
+    position: relative;
+    top: 25px;
+    width: 200px;
+    left: 240px;
+}
+#sectionTestimony .contentRight .slider-button .active{
+    background: #DAA520;
+}
+#sectionTestimony .contentRight .slider-button button{
+    width: 42px;
+    height: 9px;
+    left: 0px;
+    top: 0px;
+    background:#C4C4C4;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition-duration: .4s;
+}
+#sectionTestimony .contentRight .slider-button button:hover{
+    background-color: #DAA520;
+    transition-duration: .4s;
+}
+#sectionTestimony .contentRight .slider-button button:focus{
+    outline: none;
+}
+/* End Testimony */
+/* Footer */
+footer{
+    background:url('/images/pexels-photo-5099221.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    font-family: 'Nunito';
+    grid-area: footer;
+    position: relative;
+    margin: 0 auto;
+}
+footer div .contentLeft {
+    display: inline-block;
+}
+footer div .contentLeft p {
+    width: 491px;
+    font-size: 18px;
+    line-height: 25px;
+}
+footer div .contentRight{
+    position: relative;
+    bottom: 25px;
+    margin-left: 140px;
+    display: inline-block;
+}
+footer div .contentRight input{
+    width: 355px;
+    height: 47px;
+    padding-left: 12px;
+    border:1px solid  #DAA520;
+}
+footer div .contentRight input:focus{
+    outline: none;
+}
+footer div .contentRight input::placeholder{
+    transform:translateX(0px);
+    transition: .4s;
+}
+footer div .contentRight input:focus::placeholder{
+    transform:translateX(500px);
+    transition: .6s;
+}
+footer div .contentRight button{
+    position: relative;
+    right: 5px;
+    width: 110px;
+    height: 48px;
+    background: #DAA520;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    border: 1px solid transparent;
+    color: white;
+    font-weight: bold;
+    transition-duration: .2s;
+    box-shadow:0px 0px 0px #a07507;
+}
+footer div .contentRight button:hover{
+    transition-duration: .3s;
+    box-shadow:5px 0px 0px #a07507;
+    cursor: pointer;
+}
+footer hr{
+    width:55% ;
+    position: relative;
+    right:262px;
+}
+footer .levelTop{
+    position: relative;
+    right: 38px;
+}
+footer .levelTop ul{
+    position: relative;
+    display: inline-block;
+}
+footer .footer-contact img{
+    position: relative;
+    display: inline;
+    top: 10px;
+    right: 5px;
+}
+footer .footer-contact h2{
+    text-transform: uppercase;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 32px;
+    letter-spacing: 0.25em;
+    display: inline;
+    position: relative;
+    color: #3E3F43;
+
+}
+footer .levelTop ul h2{
+    font-size: 18px;
+    line-height: 24px;
+    color: #333333;
+}
+footer .levelTop ul li{
+    list-style: none;
+    margin-top: 16px;
+    font-size: 15px;
+}
+footer .levelTop ul a{
+    color: #8D8D8D;
+    text-decoration: none;
+}
